@@ -4,7 +4,8 @@ import Header from "./components/header";
 import Table from "./components/table"
 import API from "./utils/API";
 import Search from "./components/search";
-import Wrapper from "./components/wrapper";
+import Wrapper from "./components/Wrapper/wrapper";
+import Container from "./components/container";
 
 
 
@@ -32,8 +33,9 @@ function handleFormSubmit(e) {
   return (
 
     <div>
-      <Header />
+      <Header style={{justifyContent: 'center' }}/>
       <Search searchValue={searchValue} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit}/>
+      <Container />
       <Table results={employees} nameFilter={nameFilter}
       />
       <Wrapper />
