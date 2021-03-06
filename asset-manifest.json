@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cyoung-directory/static/css/main.c158b3e2.chunk.css",
+    "main.js": "/cyoung-directory/static/js/main.ff5c11e7.chunk.js",
+    "main.js.map": "/cyoung-directory/static/js/main.ff5c11e7.chunk.js.map",
+    "runtime-main.js": "/cyoung-directory/static/js/runtime-main.f42b5e3f.js",
+    "runtime-main.js.map": "/cyoung-directory/static/js/runtime-main.f42b5e3f.js.map",
+    "static/js/2.d0a1c4c9.chunk.js": "/cyoung-directory/static/js/2.d0a1c4c9.chunk.js",
+    "static/js/2.d0a1c4c9.chunk.js.map": "/cyoung-directory/static/js/2.d0a1c4c9.chunk.js.map",
+    "index.html": "/cyoung-directory/index.html",
+    "static/css/main.c158b3e2.chunk.css.map": "/cyoung-directory/static/css/main.c158b3e2.chunk.css.map",
+    "static/js/2.d0a1c4c9.chunk.js.LICENSE.txt": "/cyoung-directory/static/js/2.d0a1c4c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f42b5e3f.js",
+    "static/js/2.d0a1c4c9.chunk.js",
+    "static/css/main.c158b3e2.chunk.css",
+    "static/js/main.ff5c11e7.chunk.js"
+  ]
+}
