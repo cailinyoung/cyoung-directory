@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TableBody from "./tablebody";
-
+import TableBody from "../TableBody/tablebody";
+import "./table.css";
 
 function Table({ results, nameFilter = "" }) {
     const [sortDirection, setSortDirection] = useState(0);
@@ -21,10 +21,10 @@ function Table({ results, nameFilter = "" }) {
             <thead className="">
                 <tr>
                     <th scope="col">
-                        <h3 type="button">Profile Photo</h3>
+                        <h3 type="button">Profile Picture</h3>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => {
+                        <button type="button" class="btn btn-success" onClick={() => {
                             if (sortDirection) {
                                 setSortDirection(-sortDirection)
                             } else {

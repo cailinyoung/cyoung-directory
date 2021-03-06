@@ -1,4 +1,5 @@
 import React from "react";
+import "./tablebody.css";
 
 function TableBody(props) {
     const { result, index } = props;

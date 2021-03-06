@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
-import Header from "./components/header";
-import Table from "./components/table"
+import Header from "./components/Header/header";
+import Table from "./components/Table/table"
 import API from "./utils/API";
-import Search from "./components/search";
+import Search from "./components/Search/search";
 import Wrapper from "./components/Wrapper/wrapper";
-import Container from "./components/container";
+import Container from "./components/Container/container";
+
 
 
 
@@ -20,25 +21,26 @@ function App() {
     })
   }, [])
 
-function handleInputChange(e) {
-  setSearchValue(e.target.value)
+  function handleInputChange(e) {
+    setSearchValue(e.target.value)
 
-}
+  }
 
-function handleFormSubmit(e) {
-  setNameFilter(searchValue)
-  e.preventDefault()
-}
+  function handleFormSubmit(e) {
+    setNameFilter(searchValue)
+    e.preventDefault()
+  }
 
   return (
 
     <div>
-      <Header style={{justifyContent: 'center' }}/>
-      <Search searchValue={searchValue} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit}/>
-      <Container />
+      <Header />
+      <Wrapper />
+      <Search searchValue={searchValue} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} />
+      <Container>
       <Table results={employees} nameFilter={nameFilter}
       />
-      <Wrapper />
+      </Container>
     </div>
 
   );
